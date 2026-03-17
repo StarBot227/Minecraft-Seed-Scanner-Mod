@@ -1,0 +1,6 @@
+# Development & Logic Testing Requirements
+# This mod is Java-based (Gradle), but these tools are used for the Vibe Coding logic simulations
+numpy==1.26.0
+pandas==2.1.1
+requests==2.31.0
+matplotlib==3.8.0 # For coordinate mapping visualizations
