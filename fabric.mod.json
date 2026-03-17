@@ -1,0 +1,4 @@
+plugin.type=fabric
+name=MinecraftOracle
+version=1.0.0
+main=com.starbot.oracle.MinecraftOracle
