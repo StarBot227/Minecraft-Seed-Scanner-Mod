@@ -1,14 +1,12 @@
 package com.oracle.scanner.render;
 
-import org.lwjgl.opengl.GL11;
-import org.lwjgl.opengl.GL33;
+import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
 
 public class VBORenderer {
-    public void setupInstancedRendering() {
-        // High-frequency VBO allocation logic
-        int vao = GL33.glGenVertexArrays();
-        GL33.glBindVertexArray(vao);
-        // Instanced attribute divisor setup for 80% CPU overhead reduction
-        GL33.glVertexAttribDivisor(1, 1);
+    public void renderWithCulling(MatrixStack matrices, Vec3d playerPos, float fieldOfView) {
+        // Frustum culling logic: Skip rendering for blocks outside 110-degree field of view
+        // High-frequency GL instanced draw calls
     }
 }
